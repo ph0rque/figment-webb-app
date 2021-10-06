@@ -16,6 +16,6 @@ class TokenTransaction < ApplicationRecord
   end
 
   def formatted_deposit
-    deposit.to_i / 1e24
+    self.deposit.to_i / 1e24
   end
 end
