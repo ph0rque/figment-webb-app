@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Raw content:</strong>
+  <%= @blockchain.raw_content %>
+</p>
+
+<p>
+  <strong>Sender:</strong>
+  <%= @blockchain.sender %>
+</p>
+
+<p>
+  <strong>Receiver:</strong>
+  <%= @blockchain.receiver %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @blockchain.height %>
+</p>
+
+<p>
+  <strong>Deposit:</strong>
+  <%= @blockchain.deposit %>
+</p>
+
+<p>
+  <strong>Gas burnt:</strong>
+  <%= @blockchain.gas_burnt %>
+</p>
+
+<%= link_to 'Edit', edit_blockchain_path(@blockchain) %> |
+<%= link_to 'Back', blockchains_path %>

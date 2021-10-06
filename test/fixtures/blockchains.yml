@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  raw_content: 
+  sender: MyString
+  receiver: MyString
+  height: 1
+  deposit: MyString
+  gas_burnt: MyString
+
+two:
+  raw_content: 
+  sender: MyString
+  receiver: MyString
+  height: 1
+  deposit: MyString
+  gas_burnt: MyString
