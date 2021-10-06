@@ -64,3 +64,8 @@ In the `get_transactions` task, I use `upsert` (create or update) to allow the
 data to be either created or updated. However, I did not use the provided `id`
 attribute, since that ID would be token-specific (in my assumption). This can
 be refactored or improved depending on further requirements.
+
+The URL and API for getting the NEAR token transactions are currently
+hard-coded into the app. I left a comment mentioning moving this data into a
+separate database table or ENV variables when this app would be considered ready
+for production.
