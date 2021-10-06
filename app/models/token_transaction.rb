@@ -7,7 +7,7 @@ class TokenTransaction < ApplicationRecord
     gas_burnt = self
       .successful                # Only look at successful transactions,
       .where.not(gas_burnt: nil) # where there was some gas burnt,
-      .last(30)                  # last 30,
+      .first(30)                 # first 30 (since they're latest first),
       .pluck(:gas_burnt)         # get only the 'gas_burnt' attributes,
       .map(&:to_i)               # and convert from string to integer.
 
