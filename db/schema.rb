@@ -10,18 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_06_170410) do
+ActiveRecord::Schema.define(version: 2021_10_06_173101) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "blockchains", force: :cascade do |t|
+  create_table "token_transactions", force: :cascade do |t|
     t.jsonb "raw_content"
     t.string "sender"
     t.string "receiver"
     t.integer "height"
     t.string "deposit"
     t.string "gas_burnt"
+    t.datetime "time"
+    t.boolean "success"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

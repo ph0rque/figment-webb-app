@@ -1,6 +1,6 @@
 require "test_helper"
 
-class BlockchainTest < ActiveSupport::TestCase
+class TokenTransactionTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

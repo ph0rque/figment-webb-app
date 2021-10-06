@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Token Transactions (just NEAR tokens for now)</h1>
+<p><strong>Current Time:</strong> <%= Time.now %></p>
+<p>
+  <strong>Spent Gas</strong>
+  <em>(last 30 average)</em>:
+  <%= @average_spent_gas %>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sender</th>
+      <th>Receiver</th>
+      <th>Height</th>
+      <th>Deposit</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @token_transactions.each do |token_transaction| %>
+      <tr>
+        <td><%= token_transaction.sender %></td>
+        <td><%= token_transaction.receiver %></td>
+        <td><%= token_transaction.height %></td>
+        <td><%= token_transaction.formatted_deposit %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
