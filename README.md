@@ -43,10 +43,10 @@ I created a simple Rails app for the requirements. The app uses a rake task
 can be run using a scheduler such as `cron` on regular time intervals.
 
 Examining the data, I saw that each transaction may have multiple actions. In
-one case, a transaction had two actions, with one having a deposit of 0 and the
-other transactions having a deposit of more than 0. I assume that only the
-non-zero deposit should be counted. However, for the sake of this exercise, I
-added a comment to refactor the code to account for this, and took just the
+one case, a transaction had two actions, with one having a deposit of zero and
+the other transactions having a deposit of more than zero. I assume that only
+the non-zero deposit should be counted. However, for the sake of this exercise,
+I added a comment to refactor the code to account for this, and took just the
 first action.
 
 For the requirement to count the average gas burnt for last 30 transactions, I
